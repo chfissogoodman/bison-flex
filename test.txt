@@ -1,0 +1,32 @@
+library (ram1kx32_2p1r1w_lib) {
+    date                     : "Nov 16, 2021";
+    revision                 : 1.00;
+    delay_model              : "table_lookup";
+    simulation               : false;
+    time_unit                : "1ns";
+    voltage_unit             : "1V";
+    current_unit             : "1mA";
+    pulling_resistance_unit  : "1kohm";
+    leakage_power_unit       : "1nW" ;
+    capacitive_load_unit       (1, pf);
+    library_features          (report_delay_calculation);
+    in_place_swap_mode       : match_footprint;
+    default_input_pin_cap    : 1.000 ;
+    default_inout_pin_cap    : 1.000 ;
+    default_max_transition   :  0.500;
+    default_cell_leakage_power    : 0.00;
+    default_leakage_power_density : 0.00;
+    default_connection_class : universal;
+    default_fanout_load      : 1.000 ;
+    default_output_pin_cap   : 0.000 ;
+    bus_naming_style         : "%s[%d]" ;
+    nom_process              : 1.0;
+    nom_voltage              :  1.200;
+    nom_temperature          : 25.000;
+    operating_conditions(tt1p2v25c) {
+        process     :  1.0;
+        voltage     :  1.2;
+        temperature :  25;
+        tree_type   :  balanced_tree;
+    }
+}

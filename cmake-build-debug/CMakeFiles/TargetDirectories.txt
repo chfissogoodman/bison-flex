@@ -1,0 +1,3 @@
+/home/chen/CLionProjects/10.41/cmake-build-debug/CMakeFiles/10_41.dir
+/home/chen/CLionProjects/10.41/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/chen/CLionProjects/10.41/cmake-build-debug/CMakeFiles/rebuild_cache.dir
